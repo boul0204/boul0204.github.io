@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Hammerhead Shark</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+      <!-- page container -->
+  <div class="wrap">
+
+    <!-- header with img + title on top-->
+    <header id="home" class="header">
+      <img src="images/header.jpg" alt="hammerhead shark" />
+      <h1>The Hammerhead Shark</h1>
+    </header>
+    <!-- Simple NAV -->
+    <nav class="nav" aria-label="Main">
+      <ul>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#story">STORY</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+
+    <!-- main content -->
+    <main class="main">
+
+      <!-- article with wrapped image -->
+      <article id="story">
+        <h2>Life of a Hammerhead</h2>
+
+        <!-- floated image so text wraps around -->
+        <img class="wrap-img" src="images/article.jpg" alt="silly hammerhead" />
+
+        <p>A hammerhead shark uses its wide head to trap stingrays by pinning them to the seafloor. The shark's eye placement, on each end of its very wide head, allows it to scan more area more quickly than other sharks can. </p>
+        <p>The hammerhead also has special sensors across its head that helps it scan for food in the ocean. Living creatures' bodies give off electrical signals, which are picked up by sensors on the prowling hammerhead.
+
+The shark hunts alone, and can find stingrays that hide under the sand on the seafloor. Hammerheads also eat bony fishes, crabs, squid, lobsters, and other sea creatures. The upper sides of these fish are grayish-brown or olive-green and they have white bellies. They have very impressive triangular, serrated teeth—like the edge of a saw's blade. Hammerheads' mouths are on the underside of their heads. </p>
+      </article>
+
+      <!-- facts list -->
+      <section class="facts" aria-labelledby="facts-title">
+        <h3 id="facts-title">Facts About Hammerhead</h3>
+        <ul>
+          <li>Hammerhead sharks can tan! </li>
+          <li>Hammerheads can use their heads to aid in hunting</li>
+          <li>There are nine species of hammerhead shark in the world </li>
+          <li>Female Hammerheads are typically larger than males</li>
+        </ul>
+      </section>
+
+      <!-- contact form with label-->
+      <section id="contact" class="contact" aria-labelledby="contact-title">
+        <h3 id="contact-title">Contact to learn more</h3>
+
+        <form action="#" method="post" novalidate>
+          <label for="name">Your Name</label>
+          <input id="name" name="name" type="text" required />
+
+          <label for="email">Your Email</label>
+          <input id="email" name="email" type="email" required />
+
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" rows="6"></textarea>
+
+          <fieldset class="radios">
+            <legend>Would you like to visit the starfish?</legend>
+
+            <label for="yes">
+              <input id="yes" type="radio" name="visit" value="yes" /> Yes
+            </label>
+
+            <label for="no">
+              <input id="no" type="radio" name="visit" value="no" /> No
+            </label>
+
+            <label for="maybe">
+              <input id="maybe" type="radio" name="visit" value="maybe" /> Maybe
+            </label>
+          </fieldset>
+
+          <button type="submit">SEND</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <small>&copy; <span id="yr"></span>The Hammerhead Shark</small>
+    </footer>
+  </div>
+
+  <!-- Simple current year -->
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+       
